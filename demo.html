@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning DOM</title>
+</head>
+
+<body>
+    <!-- add nav tag  -->
+    <!-- <nav><a href="https://www.youtube.com/watch?v=Yixrwpt7e-g" aria-current="page">demo1</a>
+        <a href="https://www.youtube.com/watch?v=Yixrwpt7e-g">demo2</a>
+    </nav> -->
+
+    <div>
+        <ul class="ull">
+            <li id='one'>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+    <div>
+        <span class="button" id="red"></span>
+        <span class="button" id="red"></span>
+        <span class="button" id="red"></span>
+        <span class="button" id="red"></span>
+        <span class="button" id="red"></span>
+
+    </div>
+</body>
+<script>
+    const li1 = document.querySelector('.ull')
+    li1.addEventListener('click', function (e) {
+        console.log('inside event ---->', e)
+        console.log('inside event ---->', window)
+
+        alert('this is first element in order list')
+    })
+
+</script>
+
+</html>
